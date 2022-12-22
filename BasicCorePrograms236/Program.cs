@@ -20,10 +20,12 @@
                     int n = Convert.ToInt32(Console.ReadLine());
                     FlipCoin.FindPercentage(n);
                     break;
+
                     case 2:
                     Console.WriteLine("\tLeap Year Program");
                     LeapYear.ToCheckYear(); 
                     break;
+
                 case 3:
                     Console.WriteLine("\n\tPower of 2 Program");
                     Console.WriteLine("Enter a Number");
@@ -31,15 +33,18 @@
                     PowerOf2 p = new PowerOf2();
                     p.CalculatePower(num);
                     break;
+
                 case 4:
                     Console.WriteLine("\n\tHarmonic Number Program");
                     HarmonicNumber.CalHarmonicNumber();
                     break;
+
                 case 5:
                     Console.WriteLine("\n\tFactors Program");
                     Factors fact = new Factors();
                     fact.FactorOfNumber();
                     break;
+
                 case 6:
                     Console.WriteLine("\n\tQuotient And Remainder Program\n");
                     Console.WriteLine("Enter Dividend");
@@ -48,10 +53,12 @@
                     int divisor = Convert.ToInt32(Console.ReadLine());
                     QuotientandRemainder.checkQuotientRemainder(dividend,divisor);
                     break;
+
                 case 7:
                     Console.WriteLine("Swapping Two Numbers Program");
                     SwapTwoNumbers.SwappingNumber();
                     break;
+
                 default:
                     Console.WriteLine("Enter a valid option");
                     break;
