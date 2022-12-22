@@ -8,6 +8,7 @@
 
             Console.WriteLine("Please choose a option from Below List");
             Console.WriteLine("1. FlipCoin \n2. Leapyear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factors");
+            Console.WriteLine("6. Quotient and Remainder");
             int option = Convert.ToInt32(Console.ReadLine());
 
 
@@ -38,6 +39,14 @@
                     Console.WriteLine("\n\tFactors Program");
                     Factors fact = new Factors();
                     fact.FactorOfNumber();
+                    break;
+                case 6:
+                    Console.WriteLine("\n\tQuotient And Remainder Program\n");
+                    Console.WriteLine("Enter Dividend");
+                    int dividend = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter Dividend");
+                    int divisor = Convert.ToInt32(Console.ReadLine());
+                    QuotientandRemainder.checkQuotientRemainder(dividend,divisor);
                     break;
                 default:
                     Console.WriteLine("Enter a valid option");
