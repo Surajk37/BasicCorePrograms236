@@ -7,7 +7,7 @@
             Console.WriteLine("\t\t Welcome To Basic Core Programs\n");
 
             Console.WriteLine("Please choose a option from Below List");
-            Console.WriteLine("1. FlipCoin");
+            Console.WriteLine("1. FlipCoin \n2.Leapyear");
             int option = Convert.ToInt32(Console.ReadLine());
 
 
@@ -18,6 +18,10 @@
                     Console.WriteLine("Enter a Number of Time to Flip the Coin");
                     int n = Convert.ToInt32(Console.ReadLine());
                     FlipCoin.FindPercentage(n);
+                    break;
+                    case 2:
+                    Console.WriteLine("\tLeap Year Program");
+                    LeapYear.ToCheckYear(); 
                     break;
                 default:
                     Console.WriteLine("Enter a valid option");
