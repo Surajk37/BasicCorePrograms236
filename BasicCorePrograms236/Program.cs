@@ -8,9 +8,8 @@
 
             Console.WriteLine("Please choose a option from Below List");
             Console.WriteLine("1. FlipCoin \n2. Leapyear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factors");
-            Console.WriteLine("6. QuotientandRemainder \n7. SwapTwoNumbers \n8.EvenOrOdd");
+            Console.WriteLine("6. QuotientandRemainder \n7. SwapTwoNumbers \n8. EvenOrOdd \n9. VowelandConstants");
             int option = Convert.ToInt32(Console.ReadLine());
-
 
             switch (option)
             {
@@ -62,6 +61,12 @@
                 case 8:
                     Console.WriteLine("\n\tEven Or Odd Program");
                     EvenOrOdd.CheckEvenOdd();
+                    break;
+
+                case 9:
+                    Console.WriteLine("\n\tVowel And Constants Program");
+                    VowelAndConstants vowcon = new VowelAndConstants();
+                    vowcon.CheckTheTypeOfCharacter();
                     break;
 
                 default:
