@@ -8,7 +8,7 @@
 
             Console.WriteLine("Please choose a option from Below List");
             Console.WriteLine("1. FlipCoin \n2. Leapyear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factors");
-            Console.WriteLine("6. Quotient and Remainder \n7. SwapTwoNumbers");
+            Console.WriteLine("6. QuotientandRemainder \n7. SwapTwoNumbers \n8.EvenOrOdd");
             int option = Convert.ToInt32(Console.ReadLine());
 
 
@@ -29,7 +29,7 @@
                 case 3:
                     Console.WriteLine("\n\tPower of 2 Program");
                     Console.WriteLine("Enter a Number");
-                    int num = int.Parse(Console.ReadLine());
+                    int num = Convert.ToInt32(Console.ReadLine());
                     PowerOf2 p = new PowerOf2();
                     p.CalculatePower(num);
                     break;
@@ -55,8 +55,13 @@
                     break;
 
                 case 7:
-                    Console.WriteLine("Swapping Two Numbers Program");
+                    Console.WriteLine("\n\tSwapping Two Numbers Program");
                     SwapTwoNumbers.SwappingNumber();
+                    break;
+
+                case 8:
+                    Console.WriteLine("\n\tEven Or Odd Program");
+                    EvenOrOdd.CheckEvenOdd();
                     break;
 
                 default:
