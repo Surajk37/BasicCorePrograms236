@@ -7,7 +7,7 @@
             Console.WriteLine("\t\t Welcome To Basic Core Programs\n");
 
             Console.WriteLine("Please choose a option from Below List");
-            Console.WriteLine("1. FlipCoin \n2. Leapyear \n3. PowerOf2 \n4. HarmonicNumber");
+            Console.WriteLine("1. FlipCoin \n2. Leapyear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factors");
             int option = Convert.ToInt32(Console.ReadLine());
 
 
@@ -33,6 +33,11 @@
                 case 4:
                     Console.WriteLine("\n\tHarmonic Number Program");
                     HarmonicNumber.CalHarmonicNumber();
+                    break;
+                case 5:
+                    Console.WriteLine("\n\tFactors Program");
+                    Factors fact = new Factors();
+                    fact.FactorOfNumber();
                     break;
                 default:
                     Console.WriteLine("Enter a valid option");
