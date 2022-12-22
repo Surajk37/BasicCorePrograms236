@@ -8,7 +8,7 @@
 
             Console.WriteLine("Please choose a option from Below List");
             Console.WriteLine("1. FlipCoin \n2. Leapyear \n3. PowerOf2 \n4. HarmonicNumber \n5. Factors");
-            Console.WriteLine("6. Quotient and Remainder");
+            Console.WriteLine("6. Quotient and Remainder \n7. SwapTwoNumbers");
             int option = Convert.ToInt32(Console.ReadLine());
 
 
@@ -47,6 +47,10 @@
                     Console.WriteLine("Enter Dividend");
                     int divisor = Convert.ToInt32(Console.ReadLine());
                     QuotientandRemainder.checkQuotientRemainder(dividend,divisor);
+                    break;
+                case 7:
+                    Console.WriteLine("Swapping Two Numbers Program");
+                    SwapTwoNumbers.SwappingNumber();
                     break;
                 default:
                     Console.WriteLine("Enter a valid option");
